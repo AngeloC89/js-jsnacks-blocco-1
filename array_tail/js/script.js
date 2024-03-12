@@ -8,6 +8,8 @@
 
 
 let numeroElementi = parseInt(prompt('inserisci il numero di elementi: '));
+//numeridastampare chiede all'utente quanti elementi vuole stampare dalla array creata
+let numeriDaStampare = parseInt(prompt('quanti elementi vuoi stampare?'))
 let elementi = [];
 
 
@@ -21,6 +23,6 @@ for(i = 0; i <= numeroElementi; i++){
     }
 
 };
-for(i = numeroElementi - 5; i < numeroElementi; i++){
+for(i = numeroElementi - numeriDaStampare; i < numeroElementi; i++){
     console.log(elementi[i])
 };
