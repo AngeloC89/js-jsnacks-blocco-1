@@ -20,5 +20,20 @@ let frigorifero = [
 
 
 console.log(frigorifero)
-
+//aggiungo al frigo la pesca che qualcuno ha lasciato sul tavolo
 frigorifero.push('pesca')
+
+trovato = false;
+//ciclo for per cercare il cocomero nel frigo
+for (i = 0; i <= frigorifero.length; i++) {
+    if (frigorifero[i] === 'cocomero')
+        trovato = true;
+    // console.log(trovato);
+};
+if (trovato) {
+    console.log('trovato! Devo solo preparare il cocktail.')
+}
+else {
+    console.log('Oh No, devo uscire a comprare il comomero!');
+
+};
