@@ -8,9 +8,16 @@
 
 
 let numeroElementi = parseInt(prompt('inserisci il numero di elementi: '));
+let elementi = [];
 
-let numbers = [];
 
 for(i = 0; i <= numeroElementi; i++){
+    if (numeroElementi < 6){
+        console.log('inserisci un numero non inferiore a 6.')
+        break;
+    }else{
+        elementi.push(getRndInteger(1, 100));
+        console.log(elementi);
+    }
 
-}
+};
