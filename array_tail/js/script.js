@@ -21,3 +21,6 @@ for(i = 0; i <= numeroElementi; i++){
     }
 
 };
+for(i = numeroElementi - 5; i < numeroElementi; i++){
+    console.log(elementi[i])
+};
